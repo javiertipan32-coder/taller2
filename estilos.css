@@ -1,465 +1,390 @@
 /*==========================
     RESET
 ==========================*/
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#F5F7FA;
     color:#333;
+    overflow-x:hidden;
 }
-
 /*==========================
     HEADER
 ==========================*/
-
 header{
-
     width:100%;
-    height:90px;
-
+    min-height:90px;
     background:#0F172A;
-
     display:flex;
-
     justify-content:space-around;
-
     align-items:center;
-
     position:sticky;
-
     top:0;
-
+    z-index:1000;
+    padding:10px 30px;
 }
-
 .logo img{
-
     width:230px;
-
+    max-width:100%;
 }
-
+nav{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+}
 nav a{
-
     margin-left:35px;
     text-decoration:none;
-
     color:white;
-
     font-size:19px;
-
     font-weight:bold;
-
     transition:.3s;
-
 }
-
 nav a:hover{
-
     color:#3B82F6;
-
 }
-
 /*==========================
     HERO
 ==========================*/
-
 .hero{
-
     width:90%;
-
+    max-width:1200px;
     margin:auto;
-
     min-height:90vh;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
+    gap:40px;
 }
-
 .hero-texto{
-
-    width:50%;
-
+    flex:1;
 }
-
 .hero-texto h1{
-
     font-size:60px;
-
     color:#0F172A;
-
     margin-bottom:25px;
-
 }
-
 .hero-texto p{
-
     font-size:20px;
-
     color:#555;
-
     line-height:35px;
-
     margin-bottom:40px;
-
 }
-
 .hero-imagen{
-
-    width:45%;
-
+    flex:1;
+    text-align:center;
 }
-
 .hero-imagen img{
-
     width:100%;
-
+    max-width:550px;
 }
-
 /*==========================
     BOTÓN
 ==========================*/
-
 .boton{
-
     display:inline-block;
-
     background:#2563EB;
-
     color:white;
-
     padding:15px 35px;
-
     text-decoration:none;
-
     border-radius:8px;
-
     transition:.3s;
-
 }
-
 .boton:hover{
-
     background:#1D4ED8;
-
 }
-
 /*==========================
     PRODUCTOS
 ==========================*/
-
 .productos{
-
-    width:80%;
-
-    margin:150px;
-
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
 }
-
 .productos h2{
-
     text-align:center;
-
     margin-bottom:50px;
-
     font-size:40px;
-
 }
-
 .producto-estrella{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:15px;
-
-
+    margin-top:30px;
 }
-
-.card{
-
-    background:white;
-
-    border-radius:12px;
-
-    text-align:center;
-
-    padding:35px;
-    width: 300px;
-    margin: auto;
-
-    box-shadow:0 10px 20px rgba(0,0,0,.1);
-
-    transition:.4s;
-
+.tarjeta-producto{
+    transition:.3s;
 }
-
-.card:hover{
-
-    transform:translateY(-10px);
-
+.tarjeta-producto:hover{
+    transform:translateY(-8px);
 }
-
-.card img{
-
-    width:200px;
-
-    margin-bottom:20px;
-
+.tarjeta-producto img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
 }
-
-.card h3{
-
-    margin-bottom:15px;
-
+.tarjeta-producto .card-body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
-
-.card p{
-
-    margin-bottom:20px;
-
+.tarjeta-producto button{
+    margin-top:auto;
 }
-
-.card a{
-
-    text-decoration:none;
-
-    color:#2563EB;
-
-    font-weight:bold;
-
-}
-
 /*==========================
     BENEFICIOS
 ==========================*/
-
 .beneficios{
-
     background:#0F172A;
-
     color:white;
-
-    padding:80px;
-
+    padding:80px 20px;
 }
-
 .beneficios h2{
-
     text-align:center;
-
     margin-bottom:60px;
-
     font-size:40px;
-
 }
-
 .contenedor-beneficios{
-
+    width:90%;
+    max-width:1200px;
+    margin:auto;
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:30px;
-
 }
-
 .beneficio{
-
     background:#1E293B;
-
     padding:30px;
-
     border-radius:10px;
-
     text-align:center;
-
+    transition:.3s;
 }
-
+.beneficio:hover{
+    transform:translateY(-8px);
+}
 .beneficio h3{
-
     margin-bottom:15px;
-
 }
-
+.beneficio p{
+    line-height:25px;
+}
 /*==========================
     MARCAS
 ==========================*/
-
 .marcas{
-
     width:90%;
-
+    max-width:1200px;
     margin:80px auto;
-
 }
-
 .marcas h2{
-
     text-align:center;
-
     margin-bottom:50px;
-
+    font-size:38px;
 }
-
 .logos{
-display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
 }
-
 .logos img{
-
-    width: 150px;
-    height: 100px;
-    object-fit: contain;
-
+    width:140px;
+    height:90px;
+    object-fit:contain;
+    transition:.3s;
 }
-
 .logos img:hover{
-
-    filter:none;
-
-    transform:scale(1.1);
-
+    transform:scale(1.08);
 }
-
 /*==========================
     CONTACTO
 ==========================*/
-
 .contacto{
-
     background:#2563EB;
-
     color:white;
-
     text-align:center;
-
-    padding:80px;
-
+    padding:80px 20px;
 }
-
 .contacto h2{
-
     font-size:45px;
-
     margin-bottom:20px;
-
 }
-
 .contacto p{
-
     font-size:20px;
-
     margin-bottom:35px;
-
+    line-height:30px;
 }
-
 .contacto .boton{
-
     background:white;
-
     color:#2563EB;
-
 }
-
+.contacto .boton:hover{
+    background:#E5E7EB;
+}
 /*==========================
     FOOTER
 ==========================*/
-
 footer{
-
     background:#111827;
-
     color:white;
-
-    padding:50px;
-
+    padding:50px 20px;
     display:flex;
-
     justify-content:space-around;
-
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:30px;
 }
-
+footer div{
+    flex:1;
+    min-width:220px;
+}
 footer h3{
-
     margin-bottom:15px;
-
 }
-
+footer p{
+    margin-bottom:10px;
+    line-height:25px;
+}
 footer a{
-
-    margin-bottom:8px;
-    color: white;
-    
+    color:white;
+    text-decoration:none;
 }
-
+footer a:hover{
+    color:#3B82F6;
+}
+/*==========================
+    PÁGINAS INTERNAS
+==========================*/
 .pagina{
-    width: 80%;
-    margin: 100px auto;
+    width:90%;
+    max-width:1100px;
+    margin:80px auto;
 }
-
 .pagina h1{
-    text-align: center;
-    margin-bottom: 50px;
-    color: #0F172A;
+    text-align:center;
+    margin-bottom:50px;
+    color:#0F172A;
 }
-
 .info{
-    background: white;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,.1);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
 }
-
 .info:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+    transform:translateY(-8px);
 }
-
 .info h2{
-    margin: 20px 0;
+    margin-bottom:20px;
 }
-
+.info p{
+    line-height:30px;
+}
+/*==========================
+    FORMULARIO
+==========================*/
 .formulario{
-    max-width: 700px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
-
 .formulario input,
 .formulario textarea{
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    width:100%;
 }
-
+.formulario textarea{
+    resize:vertical;
+}
 .formulario button{
-    border: none;
-    cursor: pointer;
+    border:none;
+    cursor:pointer;
 }
-
 .marca{
-    color: #2563EB;
-    font-weight: bold;
-    margin-bottom: 15px;
+    color:#2563EB;
+    font-weight:bold;
+    margin-bottom:15px;
 }
-
+/*==========================
+    RESPONSIVE
+==========================*/
+@media(max-width:992px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 0;
+    }
+    .hero-texto,
+    .hero-imagen{
+        width:100%;
+    }
+    .hero-texto h1{
+        font-size:42px;
+    }
+    .producto-estrella{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .contenedor-beneficios{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:768px){
+    header{
+        padding:20px;
+        flex-direction:column;
+        gap:20px;
+    }
+    nav{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    nav a{
+        margin:10px;
+        font-size:17px;
+    }
+    .hero{
+        min-height:auto;
+        padding:40px 0;
+    }
+    .hero-texto h1{
+        font-size:34px;
+    }
+    .hero-texto p{
+        font-size:18px;
+        line-height:28px;
+    }
+    .producto-estrella{
+        grid-template-columns:1fr;
+    }
+    .contenedor-beneficios{
+        grid-template-columns:1fr;
+    }
+    .beneficios h2,
+    .productos h2,
+    .marcas h2{
+        font-size:30px;
+    }
+    .contacto h2{
+        font-size:32px;
+    }
+    .contacto p{
+        font-size:18px;
+    }
+    .logos img{
+        width:110px;
+        height:70px;
+    }
+    footer{
+        flex-direction:column;
+        text-align:center;
+    }
+}

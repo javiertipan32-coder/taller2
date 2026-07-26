@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | NextTech</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="ChatGPT Image 16 jul 2026, 09_05_38.png" alt="Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="producto.html">Productos</a>
+        <a href="contactanos.html">Contáctanos</a>
+    </nav>
+
+</header>
+
+<main class="pagina">
+
+<h1>Nuestros Productos</h1>
+
+<!-- ===========================
+BUSCADOR
+=========================== -->
+
+<section class="container mb-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="buscarProducto"
+                    class="form-control"
+                    placeholder="Buscar productos..."
+                >
+
+                <button class="btn btn-primary">
+
+                    Buscar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+CATEGORÍAS
+=========================== -->
+
+<section class="container mb-5">
+
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+
+        <button class="btn btn-outline-primary categoria" data-categoria="todos">
+            Todos
+        </button>
+
+        <button class="btn btn-outline-primary categoria" data-categoria="laptop">
+            💻 Laptops
+        </button>
+
+        <button class="btn btn-outline-primary categoria" data-categoria="celular">
+            📱 Celulares
+        </button>
+
+        <button class="btn btn-outline-primary categoria" data-categoria="audifono">
+            🎧 Audífonos
+        </button>
+
+        <button class="btn btn-outline-primary categoria" data-categoria="monitor">
+            🖥 Monitores
+        </button>
+
+        <button class="btn btn-outline-primary categoria" data-categoria="impresora">
+            🖨 Impresoras
+        </button>
+
+        <button class="btn btn-outline-primary categoria" data-categoria="mouse">
+            🖱 Mouse
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+PRODUCTOS
+=========================== -->
+
+<div class="producto-estrella">
+
+<!-- Laptop ASUS -->
+
+<article class="card producto" data-categoria="laptop">
+
+    <img src="gaming_laptop_neon_desk.webp">
+
+    <p class="marca">ASUS</p>
+
+    <h4>TUF A15</h4>
+
+    <p>Intel Core i7 14ª Gen</p>
+    <p>RTX 4070</p>
+    <p>32 GB RAM DDR5</p>
+    <p>SSD 1 TB</p>
+
+    <h3>$1899</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Laptop ASUS TUF A15"
+        data-precio="1899">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- Samsung -->
+
+<article class="card producto" data-categoria="celular">
+
+    <img src="gaming_smartphone_rgb.webp">
+
+    <p class="marca">Samsung</p>
+
+    <h4>Galaxy S26 Ultra</h4>
+
+    <p>Pantalla AMOLED 6.9"</p>
+    <p>512 GB</p>
+    <p>16 GB RAM</p>
+
+    <h3>$1299</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Samsung Galaxy S26 Ultra"
+        data-precio="1299">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- Sony -->
+
+<article class="card producto" data-categoria="audifono">
+
+    <img src="image.webp">
+
+    <p class="marca">Sony</p>
+
+    <h4>WH-1000XM7</h4>
+
+    <p>Cancelación de ruido</p>
+
+    <p>Bluetooth 5.3</p>
+
+    <p>40 horas de batería</p>
+
+    <h3>$399</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Sony WH-1000XM7"
+        data-precio="399">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- HP -->
+
+<article class="card producto" data-categoria="impresora">
+
+    <img src="impresora hp.webp">
+
+    <p class="marca">HP</p>
+
+    <h4>Smart Tank 7605</h4>
+
+    <p>Impresión</p>
+
+    <p>Escáner</p>
+
+    <p>WiFi</p>
+
+    <h3>$399</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="HP Smart Tank 7605"
+        data-precio="399">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- Dell -->
+
+<article class="card producto" data-categoria="monitor">
+
+    <img src="monitordell.webp">
+
+    <p class="marca">Dell</p>
+
+    <h4>UltraSharp U2725Q</h4>
+
+    <p>Pantalla 27"</p>
+
+    <p>Resolución 4K</p>
+
+    <p>USB-C</p>
+
+    <h3>$699</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Monitor Dell U2725Q"
+        data-precio="699">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- Logitech -->
+
+<article class="card producto" data-categoria="mouse">
+
+    <img src="logitech_mouse_minimalist.webp">
+
+    <p class="marca">Logitech</p>
+
+    <h4>G Pro X Superlight 2</h4>
+
+    <p>Sensor HERO 2</p>
+
+    <p>95 horas batería</p>
+
+    <p>32000 DPI</p>
+
+    <h3>$179</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Mouse Logitech G Pro X"
+        data-precio="179">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- ===========================
+APPLE
+=========================== -->
+
+<article class="card producto" data-categoria="laptop">
+
+    <img src="mac.png" alt="MacBook">
+
+    <p class="marca">Apple</p>
+
+    <h4>MacBook Pro M5</h4>
+
+    <p>Chip Apple M5 Pro</p>
+    <p>24 GB Memoria</p>
+    <p>SSD 1 TB</p>
+
+    <h3>$2499</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="MacBook Pro M5"
+        data-precio="2499">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- ===========================
+LENOVO
+=========================== -->
+
+<article class="card producto" data-categoria="laptop">
+
+    <img src="laptoplenovo.webp" alt="Lenovo">
+
+    <p class="marca">Lenovo</p>
+
+    <h4>ThinkPad X1 Carbon</h4>
+
+    <p>Intel Core Ultra 9</p>
+    <p>32 GB RAM</p>
+    <p>SSD 1 TB</p>
+
+    <h3>$1899</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Lenovo ThinkPad X1"
+        data-precio="1899">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- ===========================
+HUAWEI
+=========================== -->
+
+<article class="card producto" data-categoria="celular">
+
+    <img src="huawei celular.webp" alt="Huawei">
+
+    <p class="marca">Huawei</p>
+
+    <h4>Pura 80 Pro</h4>
+
+    <p>Pantalla OLED</p>
+    <p>512 GB</p>
+    <p>12 GB RAM</p>
+
+    <h3>$999</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Huawei Pura 80 Pro"
+        data-precio="999">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+<!-- ===========================
+NOKIA
+=========================== -->
+
+<article class="card producto" data-categoria="celular">
+
+    <img src="telefono nokia.webp" alt="Nokia">
+
+    <p class="marca">Nokia</p>
+
+    <h4>XR30</h4>
+
+    <p>Pantalla Full HD+</p>
+    <p>256 GB</p>
+    <p>IP68</p>
+
+    <h3>$599</h3>
+
+    <button
+        class="btn btn-success agregar"
+        data-producto="Nokia XR30"
+        data-precio="599">
+
+        Agregar al carrito
+
+    </button>
+
+</article>
+
+</div>
+
+<!-- ===========================
+CARRITO
+=========================== -->
+
+<section class="container mt-5">
+
+    <div class="card p-4 shadow">
+
+        <h2 class="text-center">
+
+            🛒 Carrito de Compras
+
+        </h2>
+
+        <ul id="listaCarrito" class="list-group my-3">
+
+        </ul>
+
+        <h4 class="text-end">
+
+            Total:
+            <span id="total">
+
+                $0
+
+            </span>
+
+        </h4>
+
+        <div class="text-center">
+
+            <button
+                class="btn btn-primary mt-3"
+                id="vaciarCarrito">
+
+                Vaciar carrito
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <div>
+
+        <h3>NextTech</h3>
+
+        <p>
+
+            Innovación, calidad y tecnología para todos.
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3>Contacto</h3>
+
+        <p>📍 Quito - Ecuador</p>
+
+        <p>📞 +593 99 999 9999</p>
+
+        <p>✉ contacto@nexttech.com</p>
+
+    </div>
+
+    <div>
+
+        <h3>Síguenos</h3>
+
+        <a href="https://www.facebook.com" target="_blank">
+
+            Facebook
+
+        </a>
+
+        <br>
+
+        <a href="https://www.instagram.com" target="_blank">
+
+            Instagram
+
+        </a>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
